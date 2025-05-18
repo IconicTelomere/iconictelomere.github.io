@@ -7,6 +7,16 @@
     <title>Joshua Hallett | IT Portfolio</title>
     <link rel="stylesheet" href="style.css" />
 </head>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const cards = document.querySelectorAll(".project-card");
+        cards.forEach(card => {
+            card.addEventListener("click", () => {
+                card.classList.toggle("expanded");
+            });
+        });
+    });
+</script>
 
 <body>
     <header class="header">
@@ -14,7 +24,78 @@
         <p>Software Developer • Full-Stack & Mobile Apps • Network Systems • Smart Tech • CLI Tools</p>
     </header>
 
+    <section class="about-me">
+        <h2>About Me</h2>
+        <p>
+            I’m Josh Hallett, a dedicated and versatile software developer with a unique background combining over 8
+            years of factory-floor operations and hands-on machinery with strong academic and practical experience in IT
+            systems.
+        </p>
+        <p>
+            I specialize in full-stack web and mobile development, building real-world tools and systems using
+            technologies like React, Express.js, Java, C#, Flutter, and AWS. My projects range from CLI apps and games
+            to smart home networks and enterprise-level network simulations.
+        </p>
+        <p>
+            I thrive on solving problems, learning new tools, and blending technical skill with practical experience to
+            deliver functional, human-centered software in any environment.
+        </p>
+    </section>
+
+    <section class="skills">
+    <h2>Skills</h2>
+    <div class="skill-group">
+        <h3>Languages</h3>
+        <ul>
+            <li>Java</li>
+            <li>C#</li>
+            <li>JavaScript</li>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>Dart</li>
+        </ul>
+    </div>
+
+    <div class="skill-group">
+        <h3>Frameworks & Tools</h3>
+        <ul>
+            <li>React</li>
+            <li>Express.js</li>
+            <li>Flutter</li>
+            <li>Node.js</li>
+            <li>Git & GitHub</li>
+            <li>Visual Studio / VS Code</li>
+            <li>AWS</li>
+            <li>NetBean</li>
+        </ul>
+    </div>
+
+    <div class="skill-group">
+        <h3>Systems & Networking</h3>
+        <ul>
+            <li>Windows Troubleshooting</li>
+            <li>PC Hardware Installation</li>
+            <li>Cisco Packet Tracer</li>
+            <li>DNS / Home Networks</li>
+        </ul>
+    </div>
+
+    <div class="skill-group">
+        <h3>Mechanical Skills</h3>
+        <ul>
+            <li>Lathe & CNC Operation</li>
+            <li>Hand Tools (grinders, saws, drills)</li>
+            <li>Overhead Crane</li>
+            <li>MiG Welding</li>
+            <li>Forklift Operation</li>
+        </ul>
+    </div>
+</section>
+
+
+    <h2 class="section-title">Projects</h2>
     <section class="projects">
+        
         <div class="project-card">
             <h2>Team Web Application – AWS, React & Express</h2>
             <p>Collaborated in a team of 6 to develop a responsive web application using React for
